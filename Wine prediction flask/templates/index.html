@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wine Quality Prediction</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body background="static\images\1_5H3VQem51GbGN8r4-iXWTA.jpg">
+<!-- Input Form -->
+<div  class="input form">
+  <form action="{{url_for('predict')}}"method="post" id="input head" class = "border border-success border-5">
+    <h1 id="heading">Wine Quality Prediction Form</h1>
+    <h3 id="input">Enter wine features</h3>
+
+    <input type="text" name="fixed_acidity" placeholder="fixed_acidity">
+
+    <input type="text" name="volatile_acidity" placeholder="volatile_acidity">
+
+    <input type="text" name="citric_acid" placeholder="citric_acid">
+
+    <input type="text" name="residual_sugar" placeholder="residual_sugar">
+
+    <input type="text" name="chlorides" placeholder="chlorides">
+
+    <input type="text" name="free_sulfur_dioxide" placeholder="free_sulfur_dioxide">
+
+    <input type="text" name="total_sulfur_dioxide" placeholder="total_sulfur_dioxide">
+
+    <input type="text" name="density" placeholder="density">
+
+    <input type="text" name="pH" placeholder="pH">
+
+    <input type="text" name="sulphates" placeholder="sulphates">
+
+    <input type="text" name="alcohol" placeholder="alcohol">
+    <br>
+    <br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+ 
+</div>
+   
+</body>
+</html>
